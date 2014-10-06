@@ -1,0 +1,291 @@
+a,a:hover,a:visited {
+	color:#d3d3d1;
+}
+
+#crafty_postcode_lookup_result_option1 {
+	display: block;
+	width: 100%;
+	height: 34px;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #555;
+	background-color: #fff;
+	background-image: none;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	-webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+	-o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+.marginTop15 {
+	margin-top: 15px;
+	color:#fff;
+}
+
+#crafty_postcode_result_display_1 img {
+	margin-top: 15px;
+}
+
+.top-nav {
+	background: #34353a;
+	color:#d3d3d1;
+	padding:5px;
+	font-size:12px;
+}
+
+.header {
+	background: #3f4247;
+	padding:20px;
+	color:#d3d3d1;
+	text-align: center;
+	font-size:25px;
+	font-weight:bold;
+	
+}
+
+.header_text {
+	text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.60);
+	-webkit-user-select: none; /* Chrome/Safari */        
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+ */
+
+	/* Rules below not implemented in browsers yet */
+	-o-user-select: none;
+	user-select: none;
+}
+
+span#header_white {
+	color:#fff;
+}
+span#header_red {
+	color:#d73b46;
+}
+
+span.red {
+	color:#d63a47;
+	font-weight: 700;
+}
+span.blue {
+	color:#758a9d;
+	font-weight: 700;
+}
+
+.content {
+	float: none;
+    margin: 0 auto;
+}
+.paddingNone {
+	padding:0;
+}
+.top-nav .navigation {
+	text-align:right;
+}
+
+.customRow {
+	border-top:1px solid #fff;
+	background: #758795;
+	height:15px;
+}
+.customRow1 {
+	border-top:1px solid #fff;
+	background: #eb6b3e;
+	height:4px;
+}
+
+.main_content {
+	background: #efebe8;
+}
+
+.main_content_text {
+	padding:20px;
+	font-size:20px;
+	font-family: "Arial Narrow", Arial, sans-serif;
+	color:#636466;
+	line-height:165%;
+}
+
+.form_container {
+	margin-top: 20px;
+	background: #758a9d;
+	border-radius: 10px;
+}
+
+.form-control::-webkit-input-placeholder {
+    color:#b3b3b3;
+    font-size:16px;
+}
+
+.form-control::-moz-placeholder {
+    color:#b3b3b3;
+    font-size:16px;
+}
+
+.form-control::-ms-placeholder {
+    color:#b3b3b3;
+    font-size:16px;
+}
+
+.form-control::placeholder {
+    color:#b3b3b3;
+    font-size:16px;
+}
+.form-control:-ms-input-placeholder {
+    color:#b3b3b3;
+    font-size:16px;
+}
+
+.form-control.error::-webkit-input-placeholder {
+    color:#a94442;
+    font-size:16px;
+}
+
+.form-control.error::-moz-placeholder {
+    color:#a94442;
+    font-size:16px;
+}
+
+.form-control.error::-ms-placeholder {
+    color:#a94442;
+    font-size:16px;
+}
+
+.form-control.error::placeholder {
+    color:#a94442;
+    font-size:16px;
+}
+.form-control.error:-ms-input-placeholder {
+    color:#a94442;
+    font-size:16px;
+}
+
+.btn-custom, .btn-custom:focus {
+	color:red;
+	font-size:16px;
+	font-weight: bold;
+	padding-right:0;
+	border: 0;
+	padding-left:3px;
+}
+
+.form-control, .form-control:focus, #crafty_postcode_lookup_result_option1 {
+	-webkit-box-shadow: 2px 2px 9px 0px rgba(50, 50, 50, 0.88);
+	-moz-box-shadow:    2px 2px 9px 0px rgba(50, 50, 50, 0.88);
+	box-shadow:         2px 2px 9px 0px rgba(50, 50, 50, 0.88);
+	border:0;
+}
+
+.input-group  button {
+	-webkit-box-shadow: 2px 2px 9px -2px rgba(50, 50, 50, 0.88);
+	-moz-box-shadow:    2px 2px 9px -2px rgba(50, 50, 50, 0.88);
+	box-shadow:         2px 2px 9px -2px rgba(50, 50, 50, 0.88);
+	border:0;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	background-color: #c9302c;
+}
+
+.input-group .form-control {
+	-webkit-box-shadow: -2px 2px 9px 0px rgba(50, 50, 50, 0.88);
+	-moz-box-shadow:    -2px 2px 9px 0px rgba(50, 50, 50, 0.88);
+	box-shadow:         -2px 2px 9px 0px rgba(50, 50, 50, 0.88);
+	border:0;
+}
+
+.input-group-btn:last-child>.btn, .input-group-btn:last-child>.btn-group {
+	margin-left: 0px;
+}
+
+.spacing {
+	margin-top: 15px;
+}
+
+.btn2, .btn2:focus {
+	color:#b3b3b3;
+    font-size:16px;
+}
+
+.form_footer {
+	background: #3f4247;
+}
+
+.form_footer .text {
+	color: #e6e6e6;
+	padding:20px 50px;
+	padding-right:20px;
+	font-size:15px;
+}
+.form_button {
+	text-align: center;
+	padding-bottom: 15px;
+}
+.btn-danger {
+	background: #d73b48;
+	border: 0;
+}
+.btn-lg {
+	padding: 15px 16px;
+	font-size: 22px;
+	line-height: 1.33;
+	border-radius: 6px;
+	border: 0;
+}
+
+.btn-form-submit, .btn-form-submit:focus {
+-webkit-box-shadow: 4px 4px 10px 0px rgba(28, 28, 28, 1);
+-moz-box-shadow:    4px 4px 10px 0px rgba(28, 28, 28, 1);
+box-shadow:         4px 4px 10px 0px rgba(28, 28, 28, 1);
+outline:0 !important;
+}
+
+.footer {
+	text-align:center;
+	font-size:11px;
+	padding:0px 50px;
+	color:#818085;
+}
+
+.footer a, .footer a:hover, .footer a:visited {
+	color:#000;
+	text-decoration: underline;
+}
+
+.error_container {
+	margin:0px 50px;
+	margin-top: 20px;
+	display:none;
+}
+
+.form-group {
+	margin: 0px;
+}
+
+.glyphicon-refresh {
+	-webkit-animation-name: rotateThis;
+	-webkit-animation-duration: .5s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+
+	animation-name: rotateThis;
+	animation-duration: .5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+.glyphicon-search {
+	cursor: pointer;
+}
+
+
+@-webkit-keyframes rotateThis {
+	from { transform: scale( 1 ) rotate( 0deg );   }
+	to   { transform: scale( 1 ) rotate( 360deg ); }
+}
+
+@keyframes rotateThis {
+	from { transform: scale( 1 ) rotate( 0deg );   }
+	to   { transform: scale( 1 ) rotate( 360deg ); }
+}

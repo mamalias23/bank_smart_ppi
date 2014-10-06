@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Bank Smart</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css?v=0.5" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+  </head>
+  <body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 top-nav">
+        <div class="content">
+          <div class="col-sm-12 paddingNone" style="text-align:center">
+            <a href=''>www.bank-smart.co.uk</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 top-nav">
+        <div class="content">
+          <div class="col-sm-12 paddingNone navigation" style="text-align:center">
+            <a href='#'>Help Centre</a> | <a href='#'>Client Login</a> | <a href='#'>Affiliate Login</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="customRow">&nbsp;</div>
+    </div>
+    <div class="row">
+      <div class="customRow1">&nbsp;</div>
+    </div>
+    <div class="content">
+      <div class="row">
+        <div class="col-sm-12 paddingNone">
+          <div class="header">
+              <span id="header_white" class="header_text" onselectstart="return false">FREE</span> <span id="header_red" class="header_text" onselectstart="return false">PPI CHECK</span>
+          </div>
+          <div class="customRow">&nbsp;</div>
+          <div class="customRow1">&nbsp;</div>
+        </div>
+      </div>
+      <div class="row main_content">
+          <div class="col-sm-5">
+            <div class="well form_container">
+              <form id="myForm" name="myForm">
+                <div class="row">
+                  <div class="col-xs-12">
+                    <div class="col-xs-3 paddingNone">
+                      <select name="title" id="title" class="form-control btn-custom">
+                        <option>Mr.</option>
+                        <option>Mrs.</option>
+                        <option>Miss</option>
+                        <option>Ms.</option>
+                        <option>Dr.</option>
+                        <option>Prof.</option>
+                        <option>Rev.</option>
+                      </select>
+                    </div>
+                    <div class="col-xs-9 paddingNone">
+                      <div class="col-xs-6" style="padding-right:0px">
+                        <input type="text" name="forename" id="forename" value="" class="form-control" placeholder="Forename" data-rule-required="true" data-msg-required="Forename">
+                      </div>
+                      <div class="col-xs-6" style="padding-right:0px">
+                        <input type="text" value="" name="surname" id="surname" class="form-control" placeholder="Surname" data-rule-required="true" data-msg-required="Surname">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="spacing"></div>
+                <div class="row">
+                  <div class="col-xs-12">
+                    <input type="text" name="contact_number" id="contact_number" value="" data-rule-required="true" data-msg-required="Preferred contact number" class="form-control" placeholder="Preferred contact number">
+                  </div>
+                </div>
+                <div class="spacing"></div>
+                <div class="row">
+                  <div class="col-xs-12">
+                    <div class="input-group">
+                      <input type="text" value="" name="postcode" id="postcode" class="form-control" placeholder="Postcode" data-rule-required="true" data-msg-required="Postcode" autocomplete="off">
+                      <span class="input-group-btn">
+                        <button class="btn btn-danger" type="button" onclick="cp_obj_1.doHouseSearch();">Find my address</button>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12" id="crafty_postcode_result_display_1">
+                  </div>
+                </div>
+                <div class="spacing"></div>
+                <div class="row">
+                  <div class="col-xs-12">
+                    <div class="form-group has-feedback">
+                      <label class="control-label sr-only" for="streetnumber">Hidden label</label>
+                      <input type="text" value="" name="streetnumber" id="streetnumber" class="form-control" data-rule-required="true" data-msg-required="House name/number" placeholder="House name/number">
+                      <span class="glyphicon glyphicon-refresh form-control-feedback sr-only"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="spacing"></div>
+                <div class="row">
+                  <div class="col-xs-12">
+                    <div class="form-group has-feedback">
+                      <label class="control-label sr-only" for="address1">Hidden label</label>
+                      <input type="text" value="" name="address1" id="address1" class="form-control" data-rule-required="true" data-msg-required="Address line 1" placeholder="Address line 1">
+                      <span class="glyphicon glyphicon-refresh form-control-feedback sr-only"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="spacing"></div>
+                <div class="row">
+                  <div class="col-xs-12">
+                    <div class="form-group has-feedback">
+                      <label class="control-label sr-only" for="address1">Hidden label</label>
+                      <input type="text" value="" name="address2" id="address2" class="form-control" data-rule-required="true" data-msg-required="Address line 2" placeholder="Address line 2">
+                      <input type="hidden" value="" name="town" id="town">
+                      <span class="glyphicon glyphicon-refresh form-control-feedback sr-only"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="spacing"></div>
+                <div class="row">
+                  <div class="col-xs-12">
+                    <div class="form-group has-feedback">
+                      <label class="control-label sr-only" for="address1">Hidden label</label>
+                      <input type="text" value="" name="county" id="county" class="form-control" placeholder="County" data-rule-required="true" data-msg-required="County">
+                      <span class="glyphicon glyphicon-refresh form-control-feedback sr-only"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="spacing"></div>
+                <div class="row">
+                  <div class="col-xs-12">
+                    <input type="text" value="" name="email" id="email" class="form-control" placeholder="Email" data-rule-email="true" data-msg-email="Email is not valid">
+                  </div>
+                </div>
+                <div class="spacing"></div>
+                <div class="row">
+                  <div class="col-xs-12" style="color:#fff;font-size:17px;">
+                    Date of birth
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12">
+                    <div class="col-xs-3 paddingNone">
+                      <input type="text" value="" name="day" id="day" class="form-control" placeholder="DD" data-rule-minlength="2" data-msg-minlength="Day must be atleast 2 characters" data-rule-min="1" data-msg-min="Day is invalid" data-rule-max="31" data-msg-max="Day is invalid">
+                    </div>
+                    <div class="col-xs-9 paddingNone">
+                      <div class="col-xs-6" style="padding-right:0px">
+                        <input type="text" value="" name="month" id="month" class="form-control" placeholder="MM" data-rule-minlength="2" data-msg-minlength="Month must be atleast 2 characters" data-rule-min="1" data-msg-min="Month is invalid" data-rule-max="12" data-msg-max="Month is invalid">
+                      </div>
+                      <div class="col-xs-6" style="padding-right:0px">
+                        <input type="text" value="" name="year" id="year" class="form-control" placeholder="YYYY" data-rule-minlength="4" data-msg-minlength="Year must be atleast 4 characters" data-rule-min="1900" data-msg-min="Year is invalid" data-rule-max="2014" data-msg-max="Year is invalid">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="spacing"></div>
+              </form>
+            </div>
+          </div>
+          <div class="col-sm-7 paddingNone">
+            <div class="alert alert-danger fade in error_container" id="validation_error">
+              <button type="button" class="close" onclick="close_error_container();"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+              Sorry, it appears you have not provided the below information:<br /><br />
+            </div>
+            <div class="alert alert-danger fade in error_container" role="alert" id="lookup_error">
+              <button type="button" class="close" onclick="close_error_container();"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+              <h4>Sorry, You got an error!</h4>
+              <p></p>
+            </div>
+            <div class="alert alert-success fade in error_container" role="alert" id="lookup_success">
+              <button type="button" class="close" onclick="close_error_container();"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+              <h4>Thank you for submitting your request for a free PPI check.</h4>
+              <p></p>
+            </div>
+            <div class="main_content_text">
+              If you think you may have had PPI on an existing or previous account, we can complete a <span class="red">free check</span> for you before starting your claim. <br /><br />
+
+              <span style="font-size:22px">To apply for your <span class="red">FREE PPI CHECK</span> today, <span class="blue">please enter your details on the form.</span></span>
+            </div>
+          </div>
+          
+      </div>
+      <div class="row">
+        <div class="customRow1">&nbsp;</div>
+        <div class="customRow">&nbsp;</div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 paddingNone">
+          <div class="form_footer">
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="text">
+                  We will send you our complete claim pack which includes full details of the Free PPI check service. For any questions, please email <span class="blue">support@bank-smart.co.uk</span>
+                </div>
+              </div>
+              <div class="col-sm-12">
+                <div class="form_button">
+                  <button type="button" id="myFormButton" class="btn btn-danger btn-lg btn-form-submit">Send</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="spacing"></div>
+      <div class="row">
+        <div class="footer">
+          <div class="links"><a href="#">Privacy Policy</a> | <a href="#">Terms of Website Use</a> | <a href="#">Terms & Conditions</a> | <a href="#">Complaints</a></div>
+          &copy; 1999 - 2014 Symmetric Systems Limited Trading as Bank-Smart. All Rights Reserved. Symmetric Systems Limited Trading as Bank-Smart is regulated by the Claims Management Regulator in respect of regulated claims management activities; its registration is recorded on the website <a href="http://www.justice.gov.uk/claims-regulation">http://www.justice.gov.uk/claims-regulation</a> under authorisation code CRM4036<br />Regulated by the Office of Fair Trading; Consumer Credit Licence: 064108. Registered with the Information Commissioners Office; registration number: Z9702452.<br />Registration Address: Building A Green Court, Truro Business Park, Truro TR4 9LF. Company Number: 3822846. Registered as a company in England & Wales. Vat Number: 731 6800 49.
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="customRow">&nbsp;</div>
+    </div>
+    <div class="row">
+      <div class="customRow1">&nbsp;</div>
+    </div>
+    <div class="row">
+      <div class="spacing"></div>
+      <div class="spacing"></div>
+    </div>
+  </div>
+
+
+  <!-- scripts -->
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.validate.js"></script>
+  <script type="text/javascript">
+
+  function close_error_container() {
+    $("div.error_container").hide();
+  }
+
+  $(function() {
+
+      var container = $("div#validation_error");
+
+      $validator = $("#myForm").validate({
+        errorLabelContainer: container,
+        wrapper: 'li',
+        onkeyup: false,
+        onclick: false,
+        onblur: false,
+        onfocusout:false 
+      });
+
+      $("#myFormButton").click(function() {
+        var errors;
+        $("#lookup_error").hide();
+
+        var isValid;
+
+        isValid = $("#myForm").valid();
+
+        if($("#postcode").hasClass("error") && $("#postcode").val()!='') {
+
+          isValid = 0;
+        }
+
+        if(isValid) {
+          //address lookup code
+          
+          // formatted_address_result = $("#streetnumber") + ', ' + $("#address1") + ', ' + $("#address2"), + ', ' + $("#county") + ', UK';
+
+          //$("#lookup_success p").html(formatted_address_result);
+          // $("#lookup_success p").html("Thank you for submitting ");
+          $("#lookup_success").show();
+
+                   
+        }
+      });
+
+      
+      
+  });
+
+  </script>
+
+  <script type="text/javascript" src="js/crafty_postcode_big.class.js"></script>
+    <script>
+    var cp_access_token = "71c9b-ab8b5-82a6a-01253 "; // ***** DON'T FORGET TO PUT YOUR ACCESS TOKEN HERE IN PLACE OF X's !!!! *****
+    var cp_obj_1 = CraftyPostcodeCreate();
+    // generic setup
+    cp_obj_1.set("access_token", cp_access_token); 
+    cp_obj_1.set("first_res_line", "----- please select your address ----"); 
+    cp_obj_1.set("res_autoselect", "0");
+    cp_obj_1.set("result_elem_id", "crafty_postcode_result_display_1");
+    cp_obj_1.set("form", "myForm");
+    //cp_obj_1.set("elem_company"  , "companyname"); // optional
+    cp_obj_1.set("elem_house_num", "streetnumber");
+    cp_obj_1.set("elem_street1"  , "address1");
+    cp_obj_1.set("elem_street2"  , "address2"); // optional, but highly recommended
+    //cp_obj_1.set("elem_street3"  , "address3"); // optional
+    cp_obj_1.set("elem_town"     , "town");
+    cp_obj_1.set("elem_county"   , "county"); // optional
+    cp_obj_1.set("elem_postcode" , "postcode");
+    //cp_obj_1.set("elem_udprn"    , "udprn"); // optional
+    cp_obj_1.set("single_res_autoselect" , 1); // dont show a drop down box if only one matching address is found
+
+    // house name/num search setup
+    //cp_obj_1.set("elem_search_house" , "streetnumber");
+
+    cp_obj_1.set("on_result_ready" , sampleFunc);
+    cp_obj_1.set("on_result_selected" , sampleFunc2);
+    cp_obj_1.set("on_error" , sampleFunc);
+
+    cp_obj_1.set("single_res_notice", ""); // set this to get rid of the ---- address found, see below ---- message
+
+
+    function sampleFunc() {
+      if(!$('#crafty_postcode_result_display_1').is(':empty')) {
+        $('#crafty_postcode_result_display_1').addClass("marginTop15");
+      }
+
+      if($("#address2").val()=='' && $("#town").val()!='') {
+        $("#address2").val($("#town").val());
+      }
+    }
+
+    function sampleFunc2() {
+      if($("#address2").val()=='' && $("#town").val()!='') {
+        $("#address2").val($("#town").val());
+      }
+    }
+  </script>
+  <!-- end scripts -->
+  </body>
+</html>
