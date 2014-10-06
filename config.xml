@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns   = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "com.banksmart.ppi"
+        versionCode = "10" 
+        version     = "0.0.1" >
+
+    <!-- versionCode is optional and Android only -->
+
+    <name>Bank Smart PPI</name>
+
+    <description>
+        a free ppi check
+    </description>
+
+    <author href="https://www.facebook.com/pages/Flexible-Programming-Solutions/1482017128714849" email="mamalias23@gmail.com">
+        Flexible Programming Solutions
+    </author>
+
+    <icon src="icon.png" width="60" height="74" />
+
+</widget>
